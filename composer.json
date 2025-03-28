@@ -1,0 +1,24 @@
+{
+    "name": "polarispixels/view-maker",
+    "description": "Adds an Artisan command to generate Blade view files like make:view demo/index",
+    "type": "library",
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "PolarisPixels\\ViewMaker\\": "src/"
+        }
+    },
+    "require": {
+        "php": "^8.1",
+        "illuminate/support": "^11.0|^12.0"
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "PolarisPixels\\ViewMaker\\ViewMakerServiceProvider"
+            ]
+        }
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true
+}
